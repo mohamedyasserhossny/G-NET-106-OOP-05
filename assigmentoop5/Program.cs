@@ -25,5 +25,11 @@
         // c) static constructor is a counstructor called once at all life time of app , excuted first thing when run
         //d) class that canot creat object from 
         #endregion
+        #region question 4
+        //a) method that accept you to add other method to class have been created
+        //b)this
+        //c) in static class
+        //d)no
+        #endregion
     }
 }
