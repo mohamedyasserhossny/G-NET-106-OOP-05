@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace assigmentoop5
 {
-    internal struct Delevaryadress
+    internal class Delevaryadress
     {
         public string city;
         public string street;

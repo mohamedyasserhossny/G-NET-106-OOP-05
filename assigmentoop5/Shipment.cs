@@ -110,6 +110,17 @@ namespace assigmentoop5
         {
             weight = newweight + peckingweight;
         }
+        public Shipment shalowcopy()
+        {
+            return (Shipment)MemberwiseClone();
+        }
+        public Shipment copyshipment()
+        {
+            Shipment shipment = (Shipment)MemberwiseClone();
+            shipment.destination = new Delevaryadress(destination.city, destination.street, destination.buldingnumber);
+            return shipment;
+        }
+
 
 
     }
