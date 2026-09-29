@@ -58,8 +58,24 @@ namespace assigmentoop5
             Shipment shipment2 = shipment1;
             Console.WriteLine(shipment1.trackingcode);
             Console.WriteLine(shipment2.trackingcode);
-            Console.WriteLine(ReferenceEquals(shipment1, shipment2)); 
+            Console.WriteLine(ReferenceEquals(shipment1, shipment2));
             #endregion
+            #region practical part 2
+            Shipment shallow = shipment1.shalowcopy();
+            Console.WriteLine(shipment1.destination.city);
+            Console.WriteLine(shallow.destination.city);
+            Console.WriteLine(ReferenceEquals(shipment1.destination, shallow.destination));
+            shallow.destination.city = "giza";
+            Console.WriteLine(shipment1.destination.city);
+            Console.WriteLine(shallow.destination.city);
+            Shipment deepcopy = shipment1.deepcopy();
+            Console.WriteLine(ReferenceEquals(shipment1.destination, shallow.destination));
+            deepcopy.destination.city = "assuit";
+            Console.WriteLine(shipment1.destination.city);
+            Console.WriteLine(shallow.destination.city);
+            Console.WriteLine(ReferenceEquals(shipment1.destination, shallow.destination)); 
+            #endregion
+
 
             Console.WriteLine("enter express trackingcode");
             string expresstrackingcode = Console.ReadLine();

@@ -114,7 +114,7 @@ namespace assigmentoop5
         {
             return (Shipment)MemberwiseClone();
         }
-        public Shipment copyshipment()
+        public Shipment deepcopy()
         {
             Shipment shipment = (Shipment)MemberwiseClone();
             shipment.destination = new Delevaryadress(destination.city, destination.street, destination.buldingnumber);
