@@ -208,7 +208,11 @@ namespace assigmentoop5
             }
             delvarycenter.printallshipments();
             #region paractical 6
-            Console.WriteLine(Shipment.gettotalshipmentcreated()); 
+            Console.WriteLine(Shipment.gettotalshipmentcreated());
+            #endregion
+            #region parctical 7
+            deleveryutilise.printseprator();
+            deleveryutilise.printsystemtitle(); 
             #endregion
         }
     }
