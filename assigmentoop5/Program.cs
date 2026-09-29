@@ -10,5 +10,14 @@
             //c)copying by refrence no new object created , copyng by object new object created 
             #endregion
         }
+        #region question 2
+
+        //a)a new object but the refrence type object refer to the same object
+        //b) new object in all
+        //c) stil refer to the same object 
+        //d)refer to new object 
+        
+
+        #endregion
     }
 }
