@@ -207,6 +207,9 @@ namespace assigmentoop5
                 Console.WriteLine("failed");
             }
             delvarycenter.printallshipments();
+            #region paractical 6
+            Console.WriteLine(Shipment.gettotalshipmentcreated()); 
+            #endregion
         }
     }
 }

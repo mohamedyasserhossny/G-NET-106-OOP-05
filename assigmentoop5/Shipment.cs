@@ -8,11 +8,13 @@ namespace assigmentoop5
 {
     internal abstract class Shipment
     {
+        public static int totalshipmentscreated = 0;
         private string _trackingcode;
         private string _description;
         private decimal _weight;
         private decimal _delevaryfee;
         public Delevaryadress destination { set; get; }
+        
         public string trackingcode
         {
             get
@@ -74,6 +76,7 @@ namespace assigmentoop5
 
         public Shipment(string Trackingcode)
         {
+            totalshipmentscreated++;
             trackingcode = Trackingcode;
             description = "unkown";
             weight = 1;
@@ -82,8 +85,21 @@ namespace assigmentoop5
 
 
         }
+        static Shipment()
+        {
+            totalshipmentscreated = 0;
+            Console.WriteLine("static intialized has happened");
+        }
+        public static int gettotalshipmentcreated() {
+            return totalshipmentscreated;
+        }
+        
+
+        
+
         public Shipment(string Trackingcode, string Description, decimal Weight, decimal Delevaryfee, Delevaryadress Destiontion)
         {
+            totalshipmentscreated++;
             trackingcode = Trackingcode;
             description = Description;
             weight = Weight;
