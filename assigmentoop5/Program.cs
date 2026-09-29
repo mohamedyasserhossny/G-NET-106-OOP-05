@@ -31,5 +31,11 @@
         //c) in static class
         //d)no
         #endregion
+        #region question 5
+        //a) split class into two clases with the same name in the same file or diffrent files
+        //b) عشان ممكن اتنين يشتغلو علي نفس الكلاس واحد مثلا يعمل ال ميثود و واجد يعمل الفيلد
+        //c)ممكن نعرفها في ملف و نعمل ال بادي بتعها في ملف تاني 
+        //d)its deleted in compile time
+        #endregion
     }
 }
