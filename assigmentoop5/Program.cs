@@ -16,8 +16,14 @@
         //b) new object in all
         //c) stil refer to the same object 
         //d)refer to new object 
-        
 
+
+        #endregion
+        #region qustion 3
+        //a) ststic filed filed to the hall class ,instant filed to own object
+        //b)static method follow the class such as empolyee.pay() not emp 1.pay() , no canot (لازم تكون ستاتيك)
+        // c) static constructor is a counstructor called once at all life time of app , excuted first thing when run
+        //d) class that canot creat object from 
         #endregion
     }
 }
