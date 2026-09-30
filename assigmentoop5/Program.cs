@@ -212,7 +212,15 @@ namespace assigmentoop5
             #endregion
             #region parctical 7
             deleveryutilise.printseprator();
-            deleveryutilise.printsystemtitle(); 
+            deleveryutilise.printsystemtitle();
+            #endregion
+            #region parctical 8
+            Console.WriteLine(expressshipment.getsummary());
+            Console.WriteLine(internationalshipment.getsummary());
+            Console.WriteLine(standeredshipment.getsummary());
+            Console.WriteLine(expressshipment.isdeleverd());
+            Console.WriteLine(internationalshipment.isdeleverd());
+            Console.WriteLine(standeredshipment.isdeleverd()); 
             #endregion
         }
     }

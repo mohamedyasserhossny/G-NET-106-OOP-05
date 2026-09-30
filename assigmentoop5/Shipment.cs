@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace assigmentoop5
 {
-    internal abstract class Shipment
+    internal abstract class Shipment:ITrackable
     {
         public static int totalshipmentscreated = 0;
         private string _trackingcode;
@@ -14,7 +14,13 @@ namespace assigmentoop5
         private decimal _weight;
         private decimal _delevaryfee;
         public Delevaryadress destination { set; get; }
-        
+        private string trackingstatus = "In Transit";
+
+        public string gettrackingstatus()
+        {
+            return trackingstatus;
+        }
+
         public string trackingcode
         {
             get
@@ -137,8 +143,7 @@ namespace assigmentoop5
             return shipment;
         }
 
-
-
+       
     }
 }
     
